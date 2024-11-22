@@ -1,0 +1,77 @@
+---
+// import { Image } from "astro:assets";
+// import aboutImg from "@/assets/about-astro.png";
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description: "Ayesha Gull - Computer Science student, ML researcher, and full-stack developer",
+	title: "About",
+};
+
+const skills = [
+	"Machine Learning & Deep Learning",
+	"Full-Stack Web Development",
+	"Computer Vision",
+	"Natural Language Processing",
+	"Cloud Computing (AWS/Azure)",
+	"MLOps & DevOps",
+	"Data Analysis & Visualization",
+];
+
+const interests = [
+	"Contributing to open-source projects",
+	"Teaching computer science to underprivileged students",
+	"Building solutions for social impact",
+	"Research in AI and ML",
+];
+---
+
+<PageLayout meta={meta}>
+	<div class="space-y-6">
+		<h1 class="title">About Me</h1>
+		<p class="text-lg">
+			Hi! I'm Ayesha Gull, a Computer Science student at Namal University with a passion for
+			artificial intelligence, software development, and open-source contributions. As a Research
+			Assistant at the Generative Intelligent Systems (GeniSys) Lab, I develop cutting-edge AI
+			models and systems to tackle real-world challenges.
+		</p>
+
+		<p>
+			Beyond academics, I actively contribute to community-driven projects, such as building
+			accessible educational platforms and volunteering as a teacher for underprivileged students.
+			Whether I'm coding, researching, or empowering others through technology, I strive to create
+			meaningful impact every step of the way.
+		</p>
+
+		<div class="mt-8">
+			<h2 class="mb-4 text-xl font-semibold">Technical Expertise</h2>
+			<ul class="grid list-inside list-disc grid-cols-1 gap-2 md:grid-cols-2">
+				{skills.map((skill) => <li>{skill}</li>)}
+			</ul>
+		</div>
+
+		<div class="mt-8">
+			<h2 class="mb-4 text-xl font-semibold">Current Projects & Research</h2>
+			<ul class="list-inside list-disc">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+		<div class="mt-8">
+			<h2 class="mb-4 text-xl font-semibold">Beyond Tech</h2>
+			<ul class="list-inside list-disc">
+				{interests.map((interest) => <li>{interest}</li>)}
+			</ul>
+		</div>
+
+		<p class="mt-8">
+			Want to collaborate or just chat? Feel free to reach out through any of my social links or
+			drop me an <span class="cactus-link inline-block"
+				><a href="mailto:ayeshaiqbal2592@gmail.com" rel="noreferrer" target="_blank">email</a></span
+			>!
+		</p>
+	</div>
+</PageLayout>
