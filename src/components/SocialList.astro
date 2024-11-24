@@ -22,11 +22,20 @@ const socialLinks: {
 		link: "https://www.linkedin.com/in/ayeshagull/",
 		name: "mdi:linkedin",
 	},
+	{
+		friendlyName: "X",
+		link: "https://x.com/ayesha_g7",
+		name: "mdi:twitter",
+	},
+	{
+		friendlyName: "Resume",
+		link: "https://www.scribd.com/",
+		name: "mdi:file-document",
+	},
 ];
 ---
 
 <div class="mt-6 flex flex-wrap items-end gap-x-2">
-	<p>Find me on</p>
 	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
 		{
 			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
@@ -37,7 +46,7 @@ const socialLinks: {
 						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
 						target="_blank"
 					>
-						<Icon aria-hidden="true" class="h-8 w-8" focusable="false" name={name} />
+						<Icon aria-hidden="true" class="h-5 w-5 text-link" focusable="false" name={name} />
 						<span class="sr-only">{friendlyName}</span>
 					</a>
 				</li>
