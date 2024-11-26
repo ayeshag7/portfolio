@@ -1,17 +1,25 @@
 {
 	"extends": "astro/tsconfigs/strictest",
 	"compilerOptions": {
-		"baseUrl": ".",
-		"lib": ["es2022", "dom", "dom.iterable"],
-		"paths": {
-			"@/assets/*": ["src/assets/*"],
-			"@/components/*": ["src/components/*"],
-			"@/data/*": ["src/data/*"],
-			"@/layouts/*": ["src/layouts/*"],
-			"@/utils/*": ["src/utils/*"],
-			"@/types": ["src/types.ts"],
-			"@/site-config": ["src/site.config.ts"]
-		}
+	  "baseUrl": ".",
+	  "lib": ["es2022", "dom", "dom.iterable"],
+	  "paths": {
+		"@/assets/*": ["src/assets/*"],
+		"@/components/*": ["src/components/*"],
+		"@/data/*": ["src/data/*"],
+		"@/layouts/*": ["src/layouts/*"],
+		"@/utils/*": ["src/utils/*"],
+		"@/types": ["src/types.ts", "@types/three"],
+		"@/site-config": ["src/site.config.ts"]
+	  },
+	  "resolveJsonModule": true,
+	  "esModuleInterop": true,
+	  "allowSyntheticDefaultImports": true,
+	  "moduleResolution": "node",
+	  "jsx": "react-jsx", // Enable JSX for React in Astro
+      "skipLibCheck": true // Avoid unnecessary type errors from external libraries
 	},
-	"exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"]
-}
+	"exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"],
+	"include": ["**/*.ts", "**/*.astro", "node_modules/astro/client.d.ts"]
+  }
+  

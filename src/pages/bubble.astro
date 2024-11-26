@@ -1,0 +1,14 @@
+---
+// Import the React component
+import ParticleRing from "../components/ParticleRing";
+import PageLayout from "@/layouts/Root.astro";
+
+const meta = {
+	description: "Ayesha Gull - Computer Science student, ML researcher, and full-stack developer",
+	title: "About",
+};
+---
+
+<PageLayout meta={meta}>
+	<ParticleRing client:visible />
+</PageLayout>

@@ -6,6 +6,7 @@ import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import webmanifest from "astro-webmanifest";
+import react from "@astrojs/react"; // Import React integration
 import { defineConfig, passthroughImageService } from "astro/config";
 import { expressiveCodeOptions } from "./src/site.config";
 import { siteConfig } from "./src/site.config";
@@ -75,6 +76,7 @@ export default defineConfig({
 				insertManifestLink: false,
 			},
 		}),
+		react(), // Add React integration here
 	],
 	markdown: {
 		rehypePlugins: [
@@ -109,8 +111,7 @@ export default defineConfig({
 function rawFonts(ext: string[]) {
 	return {
 		name: "vite-plugin-raw-fonts",
-		// @ts-expect-error:next-line
-		transform(_, id) {
+		transform(_: unknown, id: string): { code: string; map: null } | undefined {
 			if (ext.some((e) => id.endsWith(e))) {
 				const buffer = fs.readFileSync(id);
 				return {
@@ -118,6 +119,7 @@ function rawFonts(ext: string[]) {
 					map: null,
 				};
 			}
+			return undefined; // Ensure all code paths return a value
 		},
 	};
 }
