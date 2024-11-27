@@ -3,6 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "../utils/particlesRing";
 import { Group } from "three";
+import Navbar from "./Navbar.tsx";
 
 const ParticleRing = () => {
   return (
@@ -20,9 +21,10 @@ const ParticleRing = () => {
         <PointCircle />
       </Canvas>
 
-      <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] pointer-events-none font-mono text-lg font-normal text-textColor antialiased">
-        Drag & Zoom
-      </h1>
+      <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-10 pointer-events-auto">
+        <Navbar/>
+      </div>
+      
     </div>
   );
 };
