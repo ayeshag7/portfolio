@@ -24,6 +24,11 @@
 		/* Penrose triangle and ball colors */
 		--triangle-color: 351deg 66% 48%;
 		--ball-color: 203deg 11% 15%;
+		
+		/* experiences */
+		--theme-expbg: 351deg 66% 48%;
+		--theme-exptext: 0deg 0% 98%;
+		--theme-line: 203deg 11% 15%;
 
 	}
 
@@ -46,6 +51,11 @@
 		/* Penrose triangle and ball colors */
 		--triangle-color: 174deg 81% 46%;
 		--ball-color: 0deg 0% 100%;
+
+		/* experiences */
+        --theme-expbg: 170deg 75% 53%;
+		--theme-exptext: 240deg 100% 3%;
+		--theme-line: 0deg 0% 98%;
 	}
 
 	.text-link {

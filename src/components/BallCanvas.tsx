@@ -18,7 +18,7 @@ const Ball: React.FC<BallProps> = ({ imgUrl }) => {
       <directionalLight position={[0, 0, 0.05]} intensity={0.5} />
       
       {/* Border mesh with slightly larger size */}
-      <mesh scale={2.85} >
+      <mesh scale={1.45} >
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color="transparent"  // Making the mesh itself transparent
@@ -28,7 +28,7 @@ const Ball: React.FC<BallProps> = ({ imgUrl }) => {
       </mesh>
 
       {/* Ball mesh */}
-      <mesh castShadow receiveShadow scale={2.75}>
+      <mesh castShadow receiveShadow scale={2.25}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color="#ffffff"

@@ -7,6 +7,7 @@ import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import webmanifest from "astro-webmanifest";
 import react from "@astrojs/react"; // Import React integration
+import commonjs from "vite-plugin-commonjs";
 import { defineConfig, passthroughImageService } from "astro/config";
 import { expressiveCodeOptions } from "./src/site.config";
 import { siteConfig } from "./src/site.config";
@@ -76,7 +77,7 @@ export default defineConfig({
 				insertManifestLink: false,
 			},
 		}),
-		react(), // Add React integration here
+		react(),
 	],
 	markdown: {
 		rehypePlugins: [
@@ -104,7 +105,7 @@ export default defineConfig({
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
 		},
-		plugins: [rawFonts([".ttf", ".woff"])],
+		plugins: [rawFonts([".ttf", ".woff"]), commonjs()],
 	},
 });
 

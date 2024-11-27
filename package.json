@@ -31,13 +31,14 @@
 		"astro-webmanifest": "^1.0.0",
 		"clsx": "^2.1.1",
 		"cssnano": "^7.0.6",
-		"framer-motion": "^11.11.10",
+		"framer-motion": "^11.11.11",
 		"hastscript": "^9.0.0",
 		"mdast-util-directive": "^3.0.0",
 		"mdast-util-to-markdown": "^2.1.0",
 		"mdast-util-to-string": "^4.0.0",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
+		"react-vertical-timeline-component": "^3.6.0",
 		"rehype-external-links": "^3.0.0",
 		"remark-directive": "^3.0.0",
 		"satori": "0.11.2",
@@ -59,6 +60,7 @@
 		"@types/mdast": "^4.0.4",
 		"@types/react": "^18.3.12",
 		"@types/react-dom": "^18.3.1",
+		"@types/react-vertical-timeline-component": "^3.3.6",
 		"@types/tailwindcss": "^3.1.0",
 		"autoprefixer": "^10.4.20",
 		"pagefind": "^1.1.1",
@@ -69,6 +71,7 @@
 		"remark-unwrap-images": "^4.0.0",
 		"sass-embedded": "^1.81.0",
 		"tailwindcss": "^3.4.13",
-		"typescript": "^5.6.2"
+		"typescript": "^5.6.2",
+		"vite-plugin-commonjs": "^0.10.4"
 	}
 }
