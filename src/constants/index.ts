@@ -1,7 +1,7 @@
 export const technologies = [
   { name: "HTML 5", icon: "/portfolio/images/tech/html.png" },
   { name: "CSS 3", icon: "/portfolio/images/tech/css.png" },
-  { name: "JavaScript", icon: "/portfolio/images/tech/javascript.png" },
+  { name: "JavaScript", icon: "/portfolio/images/tech/logo-javascript.svg" },
   { name: "TypeScript", icon: "/portfolio/images/tech/typescript.png" },
   { name: "React JS", icon: "/portfolio/images/tech/reactjs.png" },
   { name: "Redux Toolkit", icon: "/portfolio/images/tech/redux.png" },
