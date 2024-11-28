@@ -5,26 +5,10 @@ import { getAllPosts, sortMDByDate } from "@/data/post";
 import PageLayout from "@/layouts/Base.astro";
 import Tech from "@/components/Tech";
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
-
-// const cactusProjects: {
-// 	description: string;
-// 	imageSrc: string;
-// 	imageAlt: string;
-// 	title: string;
-// 	link: string;
-// }[] = [
-// 	{
-// 		description:
-// 			"Development of advanced machine learning and deep learning techniques for detecting cyber attacks on Internet of Medical Things (IoMT) devices in the healthcare sector.",
-// 		imageSrc: "/portfolio/images/project-1.png",
-// 		imageAlt: "project-thumbnail",
-// 		title: "Cyber Attacks Detection on IoMT Devices",
-// 		link: "https://github.com/usmansafdarktk/IoMT-Cyber-Attack-Detection",
-// 	}
-// ];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -45,6 +29,11 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 	<section class="mb-8 mt-16">
 		<h2 class="title mb-12 text-xl">Technologies</h2>
 		<Tech client:visible />
+	</section>
+
+	<section class="mb-8 mt-16">
+		<h2 class="title mb-12 text-xl">Projects</h2>
+		<Projects client:visible />
 	</section>
 
 	<section aria-label="Blog post list" class="mt-16">

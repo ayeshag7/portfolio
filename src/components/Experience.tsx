@@ -14,10 +14,10 @@ const ExperienceCard: React.FC<{ experience: typeof experiences[0] }> = ({
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "hsl(var(--theme-expbg))",
-        color: "hsl(var(--theme-exptext))",
+        background: "hsl(var(--theme-bg))",
+        color: "hsl(var(--theme-text))",
       }}
-      contentArrowStyle={{ borderRight: "7px solid hsl(var(--theme-line))" }}
+      contentArrowStyle={{ borderRight: "7px solid hsl(var(--theme-quote))" }}
       date={experience.date}
       dateClassName={"text-hsl-var-theme-line"}
       iconStyle={{ background: experience.iconBg }}
@@ -31,6 +31,7 @@ const ExperienceCard: React.FC<{ experience: typeof experiences[0] }> = ({
           />
         </div>
       }
+      textClassName={"border border-theme-quote"}
     >
 
       <div>

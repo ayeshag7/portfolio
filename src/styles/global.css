@@ -57,6 +57,7 @@
         --theme-expbg: 170deg 75% 53%;
 		--theme-exptext: 240deg 100% 3%;
 		--theme-line: 0deg 0% 98%;
+
 	}
 
 	.text-link {
@@ -72,5 +73,11 @@
 	  .icon-div {
 		border: 10px solid #020306;
 	  }
+
+	  /* global.css */
+		.border-theme-quote {
+		border-color: hsl(var(--theme-quote));
+  		}
+  
 
 }
