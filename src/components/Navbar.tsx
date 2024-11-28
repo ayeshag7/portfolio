@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   return (
     <nav
       aria-label="Main menu"
-      className="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-white text-xl shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dashed sm:divide-white sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
+      className="static z-auto -ms-4 mt-1 flex flex-row items-center divide-x divide-dashed divide-white rounded-none bg-transparent py-0 shadow-none backdrop-blur-none"
     >
       {menuLinks.map((link) => (
         <a
