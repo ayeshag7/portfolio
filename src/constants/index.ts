@@ -1,4 +1,8 @@
 export const technologies = [
+  { name: "Docker", icon: "/portfolio/images/tech/docker.png" },
+  { name: "TensorFlow", icon: "/portfolio/images/tech/TensorFlow.png" },
+  { name: "OpenCV", icon: "/portfolio/images/tech/OpenCV.png" },
+  { name: "Git", icon: "/portfolio/images/tech/git.png" },
   { name: "HTML 5", icon: "/portfolio/images/tech/html.png" },
   { name: "CSS 3", icon: "/portfolio/images/tech/css.png" },
   { name: "JavaScript", icon: "/portfolio/images/tech/logo-javascript.svg" },
@@ -9,10 +13,6 @@ export const technologies = [
   { name: "Node JS", icon: "/portfolio/images/tech/nodejs.png" },
   { name: "MongoDB", icon: "/portfolio/images/tech/mongodb.png" },
   { name: "Three JS", icon: "/portfolio/images/tech/threejs.svg" },
-  { name: "Docker", icon: "/portfolio/images/tech/docker.png" },
-  { name: "TensorFlow", icon: "/portfolio/images/tech/TensorFlow.png" },
-  { name: "OpenCV", icon: "/portfolio/images/tech/OpenCV.png" },
-  { name: "Git", icon: "/portfolio/images/tech/git.png" },
   { name: "Figma", icon: "/portfolio/images/tech/figma.png" },
 ];
 
