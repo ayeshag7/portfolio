@@ -5,6 +5,7 @@
 @layer base {
 
 	:root,
+
 	:root[data-theme="light"] {
 		color-scheme: light;
 		/* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
@@ -61,5 +62,15 @@
 	.text-link {
 		color: var(--theme-link);
 	}
+
+	.text-hsl-var-theme-line {
+		color: hsl(var(--theme-line));
+		margin-inline: 16px;
+		margin-top: 4px;
+	  }
+
+	  .icon-div {
+		border: 10px solid #020306;
+	  }
 
 }

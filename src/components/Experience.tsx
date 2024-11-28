@@ -18,30 +18,26 @@ const ExperienceCard: React.FC<{ experience: typeof experiences[0] }> = ({
         color: "hsl(var(--theme-exptext))",
       }}
       contentArrowStyle={{ borderRight: "7px solid hsl(var(--theme-line))" }}
+      date={experience.date}
+      dateClassName={"text-hsl-var-theme-line"}
       iconStyle={{ background: experience.iconBg }}
+      iconClassName={"icon-div"}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[80%] h-[80%] object-contain rounded-full"
+            className="w-[60%] h-[60%] object-contain rounded-full"
           />
         </div>
       }
     >
-      {/* Manually render the date here */}
-      <div
-        className="text-hsl(var(--theme-exptext)) mx-2 text-center font-semibold text-sm"
-        style={{ marginBottom: '20px' }}
-      >
-        {experience.date}
-      </div>
 
       <div>
         <h3 className="text-hsl(var(--theme-exptext)) text-[24px] font-bold">{experience.title}</h3>
         <p
-          className="text-secondary text-[16px] font-semibold"
-          style={{ margin: 0 }}
+          className="text-hsl(var(--theme-exptext)) text-[16px] font-semibold"
+          style={{ margin: "6px 0 0 0", fontWeight: "400" }}
         >
           {experience.company_name}
         </p>
@@ -51,7 +47,7 @@ const ExperienceCard: React.FC<{ experience: typeof experiences[0] }> = ({
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
+            className="text-[14px] pl-4 tracking-wider"
           >
             {point}
           </li>
