@@ -9,21 +9,26 @@ type BallProps = {
 };
 
 const Ball: React.FC<BallProps> = ({ imgUrl }) => {
-  const [decal] = useTexture([imgUrl]);
+  // Load texture and handle potential errors
+  const [decal, error] = useTexture([imgUrl]);
+
+  if (error) {
+    console.error(`Failed to load texture: ${imgUrl}`, error);
+  }
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       {/* Ambient and directional lights */}
       <ambientLight intensity={1} />
       <directionalLight position={[0, 0, 0.05]} intensity={0.5} />
-      
+
       {/* Border mesh with slightly larger size */}
-      <mesh scale={1.45} >
+      <mesh scale={1.45}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color="transparent"  // Making the mesh itself transparent
-          emissive="hsl(var(--triangle-color) / <alpha-value>)"  // Using your global CSS variable for border color
-          emissiveIntensity={1}  // This makes the border glow-like
+          color="transparent"
+          emissive="hsl(var(--triangle-color) / <alpha-value>)"
+          emissiveIntensity={1}
         />
       </mesh>
 
@@ -36,7 +41,7 @@ const Ball: React.FC<BallProps> = ({ imgUrl }) => {
           polygonOffsetFactor={-5}
           flatShading
         />
-        {/* Only render Decal if the texture is loaded */}
+        {/* Render Decal only if texture is loaded */}
         {decal && (
           <Decal
             position={[0, 0, 1]}

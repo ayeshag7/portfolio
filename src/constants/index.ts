@@ -1,4 +1,11 @@
 export const technologies = [
+  { name: "HTML 5", icon: "/portfolio/images/tech/html.png" },
+  { name: "CSS 3", icon: "/portfolio/images/tech/css.png" },
+  { name: "JavaScript", icon: "/portfolio/images/tech/logo-javascript.svg" },
+  { name: "TypeScript", icon: "/portfolio/images/tech/typescript.png" },
+  { name: "React JS", icon: "/portfolio/images/tech/reactjs.png" },
+  { name: "Redux Toolkit", icon: "/portfolio/images/tech/redux.png" },
+  { name: "Tailwind CSS", icon: "/portfolio/images/tech/tailwind.png" },
   { name: "Node JS", icon: "/portfolio/images/tech/nodejs.png" },
   { name: "MongoDB", icon: "/portfolio/images/tech/mongodb.png" },
   { name: "Three JS", icon: "/portfolio/images/tech/threejs.svg" },
