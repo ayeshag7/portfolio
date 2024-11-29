@@ -1,77 +1,84 @@
 ---
 // import { Image } from "astro:assets";
-// import aboutImg from "@/assets/about-astro.png";
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
 	description: "Ayesha Gull - Computer Science student, ML researcher, and full-stack developer",
 	title: "About",
 };
-
-// const skills = [
-// 	"Machine Learning & Deep Learning",
-// 	"Full-Stack Web Development",
-// 	"Computer Vision",
-// 	"Natural Language Processing",
-// 	"Cloud Computing (AWS/Azure)",
-// 	"MLOps & DevOps",
-// 	"Data Analysis & Visualization",
-// ];
-
-// const interests = [
-// 	"Contributing to open-source projects",
-// 	"Teaching computer science to underprivileged students",
-// 	"Building solutions for social impact",
-// 	"Research in AI and ML",
-// ];
 ---
 
 <PageLayout meta={meta}>
-	<!-- <div class="space-y-6">
+	<div class="space-y-6">
 		<h1 class="title">About Me</h1>
-		<p class="text-lg">
-			Hi! I'm Ayesha Gull, a Computer Science student at Namal University with a passion for
-			artificial intelligence, software development, and open-source contributions. As a Research
-			Assistant at the Generative Intelligent Systems (GeniSys) Lab, I develop cutting-edge AI
-			models and systems to tackle real-world challenges.
-		</p>
-
 		<p>
-			Beyond academics, I actively contribute to community-driven projects, such as building
-			accessible educational platforms and volunteering as a teacher for underprivileged students.
-			Whether I'm coding, researching, or empowering others through technology, I strive to create
-			meaningful impact every step of the way.
+			Hello, I'm Ayesha! I'm a final year undergraduate student majoring in computer science, and
+			I'm just passionate about everything programming, and technology! Whether it’s developing
+			applications, contributing to open-source projects, or conducting research, I’m driven by the
+			aspiration to build solutions to the problems that matter.
 		</p>
 
-		<div class="mt-8">
-			<h2 class="mb-4 text-xl font-semibold">Technical Expertise</h2>
-			<ul class="grid list-inside list-disc grid-cols-1 gap-2 md:grid-cols-2">
-				{skills.map((skill) => <li>{skill}</li>)}
-			</ul>
-		</div>
+		<br />
+		<br />
 
-		<div class="mt-8">
-			<h2 class="mb-4 text-xl font-semibold">Current Projects & Research</h2>
+		<h1 class="title">Current Position</h1>
+		<p>
+			I'm currently working as a Research Assistant in the <span class="text-link"
+				>Generative Intelligent Systems (GeniSys)</span
+			>
+			Lab at my university, where I'm involved in different research projects. My work involves conducting
+			data collection and analysis, literature reviews, and implementing machine learning and deep learning
+			algorithms to support ongoing projects with Dr. Khawar Khurshid.
+		</p>
+
+		<br />
+		<br />
+
+		<h1 class="title">Current Research</h1>
+		<p>
+			With the aim of enhancing Urdu OCR (Optical Character Recognition), we developed a large-scale
+			synthetic Urdu text dataset with over 1.1 million word images, using systematic character
+			combinations and AmarNastaliq font rendering.
+		</p>
+		<p class="text-link">
+			“USeqNet: Large-Scale Synthetic Data and Sequential Neural Architectures for Urdu Text
+			Recognition”
+		</p>
+		<p>
+			At this stage, we are implementing and evaluating three sequential architectures:
 			<ul class="list-inside list-disc">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li><strong>CNN-LSTM</strong></li>
+				<li><strong>CNN-Attention Dual Mechanism</strong></li>
+				<li><strong>CNN-Transformer</strong></li>
 			</ul>
-		</div>
+		</p>
 
-		<div class="mt-8">
-			<h2 class="mb-4 text-xl font-semibold">Beyond Tech</h2>
-			<ul class="list-inside list-disc">
-				{interests.map((interest) => <li>{interest}</li>)}
-			</ul>
-		</div>
+		<br />
+		<br />
 
-		<p class="mt-8">
+		<h1 class="title">Current Project</h1>
+		<p>
+			As part of our Final Year Project, I along with my teammate are developing an AI-powered
+			precision agriculture ecosystem using autonomous drones and IoT sensors to promote sustainable
+			farming practices. This project aims to address inefficiencies in agriculture by introducing
+			tools for crop health monitoring, irrigation optimization, and yield estimation, providing
+			actionable insights for farmers.
+		</p>
+		<p class="text-link">“AgriSense | AI-powered Precision Agriculture ecosystem”</p>
+		<p>
+			We are integrating edge computing, cloud infrastructure, and object detection models (YOLOv10,
+			Faster R-CNN) to enable real-time analysis and decision-making.
+		</p>
+
+		<br />
+		<br />
+
+		<h1 class="title">Contact</h1>
+		<p>
 			Want to collaborate or just chat? Feel free to reach out through any of my social links or
-			drop me an <span class="cactus-link inline-block"
+			drop me an <span class="cactus-link inline-block text-base"
 				><a href="mailto:ayeshaiqbal2592@gmail.com" rel="noreferrer" target="_blank">email</a></span
 			>!
 		</p>
-	</div> -->
+	</div>
 </PageLayout>
