@@ -7,7 +7,7 @@ import PenroseTriangle from "../PenroseTriangle.astro";
 const url = new URL(Astro.request.url);
 ---
 
-<header class="mb-24 flex items-center sm:ps-[0rem]" id="main-header">
+<header class="mx-2 mb-24 flex items-center justify-between sm:ps-[0rem]" id="main-header">
 	<div class="flex items-center gap-x-8">
 		<PenroseTriangle />
 		<div class="flex-col">
@@ -20,7 +20,7 @@ const url = new URL(Astro.request.url);
 			</a>
 			<nav
 				aria-label="Main menu"
-				class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dashed sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
+				class="absolute -inset-x-2 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dashed sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
 				id="navigation-menu"
 			>
 				{
@@ -45,7 +45,7 @@ const url = new URL(Astro.request.url);
 			aria-expanded="false"
 			aria-haspopup="menu"
 			aria-label="Open main menu"
-			class="group relative ms-4 h-7 w-7 sm:invisible sm:hidden"
+			class="group relative mr-4 ms-4 h-7 w-7 sm:invisible sm:hidden"
 			id="toggle-navigation-menu"
 			type="button"
 		>
@@ -81,7 +81,7 @@ const url = new URL(Astro.request.url);
 </header>
 
 <script>
-	import { toggleClass } from "@/utils/domElement";
+	// import { toggleClass } from "@/utils/domElement";
 
 	class MobileNavBtn extends HTMLElement {
 		#menuOpen: boolean = false;
@@ -89,9 +89,13 @@ const url = new URL(Astro.request.url);
 		connectedCallback() {
 			const navigationMenu = document.getElementById("navigation-menu");
 			const mobileButtonEl = this.querySelector<HTMLButtonElement>("button");
+			// const headerEl = document.getElementById("main-header");
 
 			mobileButtonEl?.addEventListener("click", () => {
-				if (navigationMenu) toggleClass(navigationMenu, "menu-open");
+				if (navigationMenu) {
+					navigationMenu.classList.toggle("hidden");
+					navigationMenu.classList.toggle("flex");
+				}
 				this.#menuOpen = !this.#menuOpen;
 				mobileButtonEl.setAttribute("aria-expanded", this.#menuOpen.toString());
 			});
