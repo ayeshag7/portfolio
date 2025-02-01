@@ -23,7 +23,7 @@
 		"@astrojs/tailwind": "5.1.1",
 		"@react-three/drei": "^9.117.3",
 		"@react-three/fiber": "^8.17.10",
-		"@types/three": "^0.170.0",
+		"@types/three": "^0.173.0",
 		"astro": "4.15.12",
 		"astro-expressive-code": "^0.37.0",
 		"astro-icon": "^1.1.1",
@@ -47,7 +47,7 @@
 		"satori-html": "^0.3.2",
 		"sharp": "^0.33.5",
 		"tailwind-merge": "^2.5.4",
-		"three": "^0.170.0",
+		"three": "^0.173.0",
 		"unified": "^11.0.5",
 		"unist-util-visit": "^5.0.0"
 	},
