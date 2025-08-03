@@ -19,14 +19,25 @@ export const technologies = [
 
 export const experiences = [
   {
+    title: "Summer Intern",
+    company_name: "Global SME, CONFIZ",
+    icon: "/portfolio/images/exp/confiz.png",
+    iconBg: "#ffffff",
+    date: "Jun 2025 – Jul 2025 (FT)",
+    points: [
+      "Built Recon AI — an autonomous reconciliation agent with integrated document-matching and discrepancy detection workflows.",
+      "Designed deterministic vision- and text-based prompts for Azure OpenAI GPT-4o mini that extracted classified key fields from finance documents."
+    ]
+  },
+  {
     title: "Research Assistant",
     company_name: "Generative Intelligent Systems (GeniSys) Lab",
-    icon: "/portfolio/images/exp/namal.png",
+    icon: "/portfolio/images/exp/genisys.jpg",
     iconBg: "#ffffff",
-    date: "Oct 2024 – Present (PT)",
+    date: "Oct 2024 – Jan 2025 (PT)",
     points: [
-      "Conducting data collection and analysis to support ongoing projects with Dr. Khawar Khurshid.",
-      "Performing literature reviews and implementing machine learning and deep learning algorithms.",
+      "Conducted data collection and analysis to support ongoing projects with Dr. Khawar Khurshid.",
+      "Performed literature reviews and implementing machine learning and deep learning algorithms.",
     ],
   },
   {
