@@ -19,6 +19,17 @@ export const technologies = [
 
 export const experiences = [
   {
+    title: "Big Data Analyst",
+    company_name: "Confiz",
+    icon: "/portfolio/images/exp/confiz.png",
+    iconBg: "#ffffff",
+    date: "Sep 2025 – Present (FT)", // Added (FT) for consistency
+    points: [
+      "Working with Lebara, a London-based Mobile Virtual Network Operator (MVNO), on large-scale data analytics and engineering initiatives.",
+      "Utilizing cloud-based technologies including Azure Databricks, Azure Data Lake Storage (ADLS Gen2), Azure Purview, PySpark, and related tools."
+    ]
+  },
+  {
     title: "Summer Intern",
     company_name: "Global SME, CONFIZ",
     icon: "/portfolio/images/exp/confiz.png",
@@ -73,15 +84,15 @@ export const projects = [
     tags: [
       {
         name: "YOLOv10",
-        color: "text-[#367CBA]", 
+        color: "text-[#367CBA]",
       },
       {
         name: "Faster R-CNN",
-        color: "text-[#1A9B7D]", 
+        color: "text-[#1A9B7D]",
       },
       {
         name: "Edge Computing",
-        color: "text-[#D82A73]", 
+        color: "text-[#D82A73]",
       },
     ],
     image: "/portfolio/images/projects/agrisense.png",
@@ -94,15 +105,15 @@ export const projects = [
     tags: [
       {
         name: "Web Development",
-        color: "text-[#367CBA]", 
+        color: "text-[#367CBA]",
       },
       {
         name: "Multilingual",
-        color: "text-[#1A9B7D]", 
+        color: "text-[#1A9B7D]",
       },
       {
         name: "Educational Platform",
-        color: "text-[#D82A73]", 
+        color: "text-[#D82A73]",
       },
     ],
     image: "/portfolio/images/projects/pluriversity.png",
@@ -115,15 +126,15 @@ export const projects = [
     tags: [
       {
         name: "Chrome APIs",
-        color: "text-[#367CBA]", 
+        color: "text-[#367CBA]",
       },
       {
         name: "HTML/CSS/JS",
-        color: "text-[#1A9B7D]", 
+        color: "text-[#1A9B7D]",
       },
       {
         name: "User-Friendly",
-        color: "text-[#D82A73]", 
+        color: "text-[#D82A73]",
       },
     ],
     image: "/portfolio/images/projects/chat2pdf.png",
@@ -136,15 +147,15 @@ export const projects = [
     tags: [
       {
         name: "Web App",
-        color: "text-[#367CBA]", 
+        color: "text-[#367CBA]",
       },
       {
         name: "Notes",
-        color: "text-[#1A9B7D]", 
+        color: "text-[#1A9B7D]",
       },
       {
         name: "User-Friendly",
-        color: "text-[#D82A73]", 
+        color: "text-[#D82A73]",
       },
     ],
     image: "/portfolio/images/projects/codenest.png",
@@ -157,15 +168,15 @@ export const projects = [
     tags: [
       {
         name: "React",
-        color: "text-[#367CBA]", 
+        color: "text-[#367CBA]",
       },
       {
         name: "Context API",
-        color: "text-[#1A9B7D]", 
+        color: "text-[#1A9B7D]",
       },
       {
         name: "Dark Mode",
-        color: "text-[#D82A73]", 
+        color: "text-[#D82A73]",
       },
     ],
     image: "/portfolio/images/projects/coursecloud.png",
@@ -178,11 +189,11 @@ export const projects = [
     tags: [
       {
         name: "Pandas",
-        color: "text-[#367CBA]", 
+        color: "text-[#367CBA]",
       },
       {
         name: "Data Analysis",
-        color: "text-[#1A9B7D]", 
+        color: "text-[#1A9B7D]",
       },
       {
         name: "Visualization",
